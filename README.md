@@ -89,37 +89,37 @@ std::cout << "Hello, World!" << std::endl;
 ```
 
 Perl (1987): Included a printf function for formatted output.
-	```perl
+```perl
 	printf("Hello, %s!\n", "World");
-	```
+```
 
 Python (1991): Added a printf-like formatting method with the % operator and later introduced more modern string formatting techniques.
-	```python
+```python
 	print("Hello, %s!" % "World")
-	```
+```
 
-	PHP (1995): Included printf for formatted output in web development.
-	```php
-	printf("Hello, %s!", "World");
-	```
-	Java (1995): Java introduced System.out.printf in version 5.0 (2004), providing C-style formatted output.
-	```java
-	System.out.printf("Hello, %s!", "World");
-	```
+PHP (1995): Included printf for formatted output in web development.
+```php
+printf("Hello, %s!", "World");
+```
+Java (1995): Java introduced System.out.printf in version 5.0 (2004), providing C-style formatted output.
+```java
+System.out.printf("Hello, %s!", "World");
+```
 
-	C# (2000): .NET introduced String.Format, which provides similar functionality.
-	```csharp
-	Console.WriteLine(String.Format("Hello, {0}!", "World"));
-	```
+C# (2000): .NET introduced String.Format, which provides similar functionality.
+```csharp
+Console.WriteLine(String.Format("Hello, {0}!", "World"));
+```
 
-	Ruby (1995): Included a printf method for formatted output.
-	```ruby
-	printf("Hello, %s!", "World");
-	```
+Ruby (1995): Included a printf method for formatted output.
+```ruby
+printf("Hello, %s!", "World");
+```
 
-	JavaScript (1995): Modern JavaScript environments like Node.js can use template literals to achieve similar formatted output.
-	```javascript
-	console.log(`Hello, ${"World"}!`);
-	```
+JavaScript (1995): Modern JavaScript environments like Node.js can use template literals to achieve similar formatted output.
+```javascript
+console.log(`Hello, ${"World"}!`);
+```
 
 # 3. Understanding its usage
