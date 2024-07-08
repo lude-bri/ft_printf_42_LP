@@ -59,30 +59,28 @@ FORTRAN (Formula Translation) was introduced in 1957 it included basic I/O opera
 
 Was only in 1960s that ALGOL (Algorithmic Language) influential in many modern languages, provided structured programming concepts but relied on implementation-specific methods for I/O. It was the first programming language to introduce the printf.  The format specification for ALGOL owed IMO something to FORTRAN usage; elements were format directives unless they were specifically identified as literal strings - the inverse of C usage. Also, BCPL (Basic Combined Programming Language) had a writef function, which later inspired ALGOL and C.
 
-	The printf function was introduced with the C programming language, created by Dennis Ritchie and Brian Kernighan at Bell Labs for the Unix operating system. The name stands for "print formatted.". In the first chapter of The C Programming Language (Ritchie & Kernighan, 1978) the authors introduced the "Hello, World" C version
+The printf function was introduced with the C programming language, created by Dennis Ritchie and Brian Kernighan at Bell Labs for the Unix operating system. The name stands for "print formatted.". In the first chapter of The C Programming Language (Ritchie & Kernighan, 1978) the authors introduced the "Hello, World" C version
 
-	```C
+```C
 
-	#include <stdio.h>
-	
-	main()
-	{
-		printf("hello, world\n");
-	}
+#include <stdio.h>
+main()
+{
+	printf("hello, world\n");
+}
+```
+`printf` provided a way to produce formatted text, using placeholders (format specifiers) within a format string to specify how subsequent arguments should be interpreted and displayed.
 
-	```
-	`printf` provided a way to produce formatted text, using placeholders (format specifiers) within a format string to specify how subsequent arguments should be interpreted and displayed.
+Accordingly to Ritchie and Kernighan (1978), The output function printf translates internal values to characters. The syntax will be
 
-	Accordingly to Ritchie and Kernighan (1978), The output function printf translates internal values to characters. The syntax will be
+```C
+int		printf(char *format, arg1, arg2, ... );
+```
+printf converts, formats, and prints its arguments on the standard output under control of the format. It returns the number of characters printed.
 
-	```C
-		int		printf(char *format, arg1, arg2, ... );
-	```
-	printf converts, formats, and prints its arguments on the standard output under control of the format. It returns the number of characters printed.
+## 2.3. Printf in other languages
 
-	2.3. Printf in other languages
-
-	The influence of printf spread as the C programming language became widely adopted. The book "The C Programming Language" by Kernighan and Ritchie (often referred to as K&R) helped popularize the function. 1980s-1990s: As Unix and C became the foundation for many operating systems and applications, other languages began to incorporate printf-like functions:
+The influence of printf spread as the C programming language became widely adopted. The book "The C Programming Language" by Kernighan and Ritchie (often referred to as K&R) helped popularize the function. 1980s-1990s: As Unix and C became the foundation for many operating systems and applications, other languages began to incorporate printf-like functions:
 
 	C++ (1983): Inherited printf from C but also introduced cout with stream insertion operators for more flexible and type-safe I/O.
 	```cpp
