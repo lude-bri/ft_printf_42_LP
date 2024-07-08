@@ -17,9 +17,3 @@ int	ft_putchar(char c)
 	write(1, &c, 1);
 	return (1);
 }
-// int main(void)
-// {
-// 	printf("%p\n", ptr);
-// 	ft_printf("%p\n", -1);
-// 	return 0;
-// }
