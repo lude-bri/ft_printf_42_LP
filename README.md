@@ -203,5 +203,7 @@ In other hand, when the function printf does not encounter any `%`, writes every
 
 That is the way that printf function works. Prints every char into the output. If `%` is found, the function will check the next character is a **format specifier** or not. If it is, printf will check which specifier it is to print the correspondent.
 
-## Format Specifiers
+# 4. Creating a printf from scratch
+
+## 4.1 Format Specifiers
 
