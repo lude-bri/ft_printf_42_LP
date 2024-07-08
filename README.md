@@ -129,3 +129,29 @@ Printf is included in the Standard Input/Output library in C. Hence, to use it, 
 #include <stdio.h>
 ```
 To read more about preprocessors and libraries, you can find in this [link](https://github.com/lude-bri/libft_42_LP)
+
+As showned earlier, the syntax of printf in C is:
+
+```C
+int	printf(char *format, arg1, ...);
+```
+
+An example of its usage:
+
+```C
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("Hello, World\n");
+}
+```
+The output wanted will be:
+```
+Hello, World
+```
+
+You can also use it with multiple arguments
+
+```C
+```
