@@ -158,15 +158,35 @@ You can also use it with multiple arguments
 
 int	main(void)
 {
-char	*str = "It works!";
+	char	*str = "It works!";
 
-printf("%s\n", str);
-return (0);
+	printf("%s\n", str);
+	return (0);
 }
 ```
 
 The output expected will be:
 ```
 It works!
+```
+
+Or you can even use like this:
+```C
+#include <stdio.h>
+
+int	main(void)
+{
+	char	*name = "Luigi";
+	int	age = 26;
+
+	printf("Hello, my name is %s and I am %i years old", name, age);
+	return (0);
+}
+```
+
+
+The output expected will be:
+```
+Hello, my name is Luigi and I am 26 years old
 ```
 
