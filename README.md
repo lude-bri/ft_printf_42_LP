@@ -184,7 +184,6 @@ int	main(void)
 }
 ```
 
-
 The output expected will be:
 ```
 Hello, my name is Luigi and I am 26 years old
