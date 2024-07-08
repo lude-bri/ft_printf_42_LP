@@ -53,13 +53,13 @@ The writing functions was always present in the routines of the programming lang
 
 ## 2.2. Brief history of printf
 
-In the 1940s, early computers like ENIAC and UNIVAC did not have high-level programming languages. Programs were written in machine code or assembly language. Output was typically handled by hardware-specific instructions to control devices like printers or punched card readers.
+**In the 1940s**, early computers like **ENIAC** and **UNIVAC** did not have high-level programming languages. Programs were written in machine code or assembly language. Output was typically handled by hardware-specific instructions to control devices like printers or punched card readers.
 
-FORTRAN (Formula Translation) was introduced in 1957 it included basic I/O operations, such as PRINT for outputting data. In the following year, we could see this in the LISP language, one of the earliest functional programming languages, also introduced basic I/O functions. For example, print was used to display output.  
+**FORTRAN** (Formula Translation) was introduced in **1957** it included basic I/O operations, such as `PRINT` for outputting data. In the following year, we could see this in the **LISP** language, one of the earliest functional programming languages, also introduced basic I/O functions. For example, print was used to display output.  
 
-Was only in 1960s that ALGOL (Algorithmic Language) influential in many modern languages, provided structured programming concepts but relied on implementation-specific methods for I/O. It was the first programming language to introduce the printf.  The format specification for ALGOL owed IMO something to FORTRAN usage; elements were format directives unless they were specifically identified as literal strings - the inverse of C usage. Also, BCPL (Basic Combined Programming Language) had a writef function, which later inspired ALGOL and C.
+Was only in **1960s** that **ALGOL** (Algorithmic Language) influential in many modern languages, provided structured programming concepts but relied on implementation-specific methods for I/O. It was the first programming language to introduce the `printf`.  The format specification for ALGOL owed IMO something to FORTRAN usage; elements were format directives unless they were specifically identified as literal strings - the inverse of C usage. Also, **BCPL** (Basic Combined Programming Language) had a writef function, which later inspired ALGOL and C.
 
-The printf function was introduced with the C programming language, created by Dennis Ritchie and Brian Kernighan at Bell Labs for the Unix operating system. The name stands for "print formatted.". In the first chapter of The C Programming Language (Ritchie & Kernighan, 1978) the authors introduced the "Hello, World" C version
+The `printf` function was introduced with **The C Programming Language**, written by Dennis Ritchie and Brian Kernighan at Bell Labs for the Unix operating system. The name stands for "print formatted.". In the first chapter of The C Programming Language (Ritchie & Kernighan, 1978) the authors introduced the "Hello, World" C version
 
 ```C
 
@@ -82,42 +82,42 @@ printf converts, formats, and prints its arguments on the standard output under 
 
 The influence of printf spread as the C programming language became widely adopted. The book "The C Programming Language" by Kernighan and Ritchie (often referred to as K&R) helped popularize the function. 1980s-1990s: As Unix and C became the foundation for many operating systems and applications, other languages began to incorporate printf-like functions:
 
-C++ (1983): Inherited printf from C but also introduced cout with stream insertion operators for more flexible and type-safe I/O.
+**C++ (1983)**: Inherited printf from C but also introduced cout with stream insertion operators for more flexible and type-safe I/O.
 ```cpp
 printf("Hello, World!\n");
 std::cout << "Hello, World!" << std::endl;
 ```
 
-Perl (1987): Included a printf function for formatted output.
+**Perl (1987)**: Included a printf function for formatted output.
 ```perl
 	printf("Hello, %s!\n", "World");
 ```
 
-Python (1991): Added a printf-like formatting method with the % operator and later introduced more modern string formatting techniques.
+**Python (1991)**: Added a printf-like formatting method with the % operator and later introduced more modern string formatting techniques.
 ```python
 	print("Hello, %s!" % "World")
 ```
 
-PHP (1995): Included printf for formatted output in web development.
+**PHP (1995)**: Included printf for formatted output in web development.
 ```php
 printf("Hello, %s!", "World");
 ```
-Java (1995): Java introduced System.out.printf in version 5.0 (2004), providing C-style formatted output.
+**Java (1995)**: Java introduced System.out.printf in version 5.0 (2004), providing C-style formatted output.
 ```java
 System.out.printf("Hello, %s!", "World");
 ```
 
-C# (2000): .NET introduced String.Format, which provides similar functionality.
+**C# (2000):** .NET introduced String.Format, which provides similar functionality.
 ```csharp
 Console.WriteLine(String.Format("Hello, {0}!", "World"));
 ```
 
-Ruby (1995): Included a printf method for formatted output.
+**Ruby (1995)**: Included a printf method for formatted output.
 ```ruby
 printf("Hello, %s!", "World");
 ```
 
-JavaScript (1995): Modern JavaScript environments like Node.js can use template literals to achieve similar formatted output.
+**JavaScript (1995):** Modern JavaScript environments like Node.js can use template literals to achieve similar formatted output.
 ```javascript
 console.log(`Hello, ${"World"}!`);
 ```
