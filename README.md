@@ -55,7 +55,7 @@ The writing functions was always present in the routines of the programming lang
 
 In the 1940s, early computers like ENIAC and UNIVAC did not have high-level programming languages. Programs were written in machine code or assembly language. Output was typically handled by hardware-specific instructions to control devices like printers or punched card readers.
 
-	FORTRAN (Formula Translation) was introduced in 1957 it included basic I/O operations, such as PRINT for outputting data. In the following year, we could see this in the LISP language, one of the earliest functional programming languages, also introduced basic I/O functions. For example, print was used to display output.  
+FORTRAN (Formula Translation) was introduced in 1957 it included basic I/O operations, such as PRINT for outputting data. In the following year, we could see this in the LISP language, one of the earliest functional programming languages, also introduced basic I/O functions. For example, print was used to display output.  
 
 	Was only in 1960s that ALGOL (Algorithmic Language) influential in many modern languages, provided structured programming concepts but relied on implementation-specific methods for I/O. It was the first programming language to introduce the printf.  The format specification for ALGOL owed IMO something to FORTRAN usage; elements were format directives unless they were specifically identified as literal strings - the inverse of C usage. Also, BCPL (Basic Combined Programming Language) had a writef function, which later inspired ALGOL and C.
 
