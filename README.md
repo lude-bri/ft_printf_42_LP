@@ -188,4 +188,8 @@ The output expected will be:
 ```
 Hello, my name is Luigi and I am 26 years old
 ```
+Let's take a look at this example 
+<div align=center>
+	<image src=images/graph_01.png>
+</div>
 
