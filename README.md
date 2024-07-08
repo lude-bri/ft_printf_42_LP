@@ -10,7 +10,7 @@
 	<li><strong>Understading its usage</strong></li>
 	<li><strong>Creating a printf from scratch</strong></li>
 	<ol>
-		<li>Specifiers</li>
+		<li>Format Specifiers</li>
 		<li>Variadic Functions</li>
 	</ol>
 	<li><strong>Building a printf</strong></li>
@@ -188,7 +188,9 @@ The output expected will be:
 ```
 Hello, my name is Luigi and I am 26 years old
 ```
-Let's take a look at this example 
+
+Let's take a look at this example
+
 <div align=center>
 	<image src=images/graph_01.png>
 </div>
@@ -198,4 +200,8 @@ As you can see, when the function encounters a **format specifier** (beginning w
 For example, upon finding the first %, it identifies its type. In our case, the first type is `s` so it processes the first argument as a **string** and uses a specific method to insert the string "Luigi" into the output. The function repeats this procedure with each subsequent `%` it finds, and so on. 
 
 In other hand, when the function printf does not encounter any `%`, writes everything normally into the output.
+
+That is the way that printf function works. Prints every char into the output. If `%` is found, the function will check the next character is a **format specifier** or not. If it is, printf will check which specifier it is to print the correspondent.
+
+## Format Specifiers
 
