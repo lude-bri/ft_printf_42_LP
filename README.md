@@ -82,18 +82,18 @@ printf converts, formats, and prints its arguments on the standard output under 
 
 The influence of printf spread as the C programming language became widely adopted. The book "The C Programming Language" by Kernighan and Ritchie (often referred to as K&R) helped popularize the function. 1980s-1990s: As Unix and C became the foundation for many operating systems and applications, other languages began to incorporate printf-like functions:
 
-	C++ (1983): Inherited printf from C but also introduced cout with stream insertion operators for more flexible and type-safe I/O.
-	```cpp
-	printf("Hello, World!\n");
-	std::cout << "Hello, World!" << std::endl;
-	```
+C++ (1983): Inherited printf from C but also introduced cout with stream insertion operators for more flexible and type-safe I/O.
+```cpp
+printf("Hello, World!\n");
+std::cout << "Hello, World!" << std::endl;
+```
 
-	Perl (1987): Included a printf function for formatted output.
+Perl (1987): Included a printf function for formatted output.
 	```perl
 	printf("Hello, %s!\n", "World");
 	```
 
-	Python (1991): Added a printf-like formatting method with the % operator and later introduced more modern string formatting techniques.
+Python (1991): Added a printf-like formatting method with the % operator and later introduced more modern string formatting techniques.
 	```python
 	print("Hello, %s!" % "World")
 	```
