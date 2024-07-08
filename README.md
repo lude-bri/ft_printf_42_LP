@@ -193,9 +193,9 @@ Let's take a look at this example
 	<image src=images/graph_01.png>
 </div>
 
-As you can see, when the function encounters a **format specifier** (beginning with a % character), it retrieves the corresponding argument and formats it in a specific way. For example, upon finding the first %, it identifies its type. 
+As you can see, when the function encounters a **format specifier** (beginning with a % character), it retrieves the corresponding argument and formats it in a specific way. 
 
-In our case, the first type is `s` so it processes the first argument as a string and uses a specific method to insert this element into the output. The function repeats this procedure with each subsequent `%` it finds, and so on. 
+For example, upon finding the first %, it identifies its type. In our case, the first type is `s` so it processes the first argument as a **string** and uses a specific method to insert the string "Luigi" into the output. The function repeats this procedure with each subsequent `%` it finds, and so on. 
 
 In other hand, when the function printf does not encounter any `%`, writes everything normally into the output.
 
