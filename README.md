@@ -6,16 +6,15 @@
 # Index
 <ol>
 	<li><strong>Introduction</strong></li>
+	<li><strong>Context of Printf</strong></li>
+	<li><strong>Understading its usage</strong></li>
+	<li><strong>Creating a printf from scratch</strong></li>
+	<ol>
+		<li>Specifiers</li>
+		<li>Variadic Functions</li>
+	</ol>
+	<li><strong>Building a printf</strong></li>
 </ol>
-	1. Introduction
-	2. Context of Printf
-	3. Understanding its usage
-	4. Creating a printf from scratch
-		1. Specifiers
-		2. Variadic Functions
-	5.Building an printf replica
-
-
 
 # About
 
