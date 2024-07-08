@@ -123,3 +123,9 @@ console.log(`Hello, ${"World"}!`);
 ```
 
 # 3. Understanding its usage
+
+Printf is included in the Standard Input/Output library in C. Hence, to use it, we must declare in the preprocessor the following header:
+```C
+#include <stdio.h>
+```
+To read more about preprocessors and libraries, you can find in this link (libft)
