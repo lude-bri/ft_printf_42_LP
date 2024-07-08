@@ -18,7 +18,7 @@
 
 # About
 
-	The main objective of this project is to replicate the printf function. It's quite important for two reasons: 1. Develop the ability to build your own tool, recreating fundamental functions like printf and 2. understand more deeply the concepts of variadic functions and more.
+The main objective of this project is to replicate the printf function. It's quite important for two reasons: 1. Develop the ability to build your own tool, recreating fundamental functions like printf and 2. understand more deeply the concepts of variadic functions and more.
 
 # 1. Introduction
 
