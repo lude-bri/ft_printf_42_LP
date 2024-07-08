@@ -154,4 +154,19 @@ Hello, World
 You can also use it with multiple arguments
 
 ```C
+#include <stdio.h>
+
+int	main(void)
+{
+char	*str = "It works!";
+
+printf("%s\n", str);
+return (0);
+}
 ```
+
+The output expected will be:
+```
+It works!
+```
+
