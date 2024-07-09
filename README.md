@@ -361,9 +361,9 @@ You can see in the following example, the flowchart to create the printf functio
 	<image src=images/graph_02.png height="800" weight="700">
 </div>
 
-In my project, this flowchart is represented in `ft_printf.c`. You can check how I build the function in this same 
+In my project, this flowchart is represented in `ft_printf.c`. You can check how I build the function in [here](https://github.com/lude-bri/ft_printf_42_LP/tree/main/printf)
 
-# Conclusion
+# 6. Conclusion
 
 Creating a custom printf function from scratch is a valuable exercise for understanding the intricacies of formatted output and the workings of variable argument lists in C. By dissecting how to handle various format specifiers like %d, %s, %c, and %%, and implementing them through helper functions, we gain deeper insights into string processing, memory management, and output functions.
 
