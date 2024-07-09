@@ -13,44 +13,18 @@
 		<li><strong><a href="#23-printf-in-other-languages" syle="color:white">2.3. Printf in other languages</a></strong></li>
 	</ul>
 	<li><strong><a href="#3-understanding-its-usage" syle="color:white">3. Understading its usage</a></strong></li>
- 	<li><strong><a href="#4-important-aspects-of-printf" syle="color:white">4. Important aspects of Printf</a></strong></li>
-	<ol>
-		<li>Format Specifiers</li>
-		<li>Variadic Functions</li>
-	</ol>
-	<li><strong>Building a printf</strong></li>
-</ul>
-
-<li><strong><a href="#beginners-guide" style="color:white">Beginner's Guide</a></strong></li>
+	<li><strong><a href="#4-important-aspects-of-printf" syle="color:white">4. Important aspects of Printf</a></strong></li>
 	<ul style="list-style-type:disc">
-		<li><a href="#index-1">1. What is make?</a></li>
-		<li><a href="#index-2">2. An introduction to Makefiles</a></li>
-		<li><a href="#index-3">3. Rules</a></li>
-		<li><a href="#index-4">4. A simple Makefile</a></li>
-		<li><a href="#index-4.1">4.1 Dependencies and rule processing</a></li>
-		<li><a href="#index-5">5. Variables</a></li>
-		<li><a href="#index-6">6. Automatic Variables</a></li>
-		<li><a href="#index-7">7. Towards a more flexible Makefile</a></li>
-		<ul style="list-style-type:disc">
-			<li><a href="#index-7.1">7.1. Removing more redundancy</a></li>
-			<li><a href="#index-7.2">7.2. Implicit Rules</a></li>
-			<li><a href="#index-7.3">7.3. Implicit Variables</a></li>
-			<li><a href="#index-7.4">7.4. Relinking</a></li>
+		<li><strong><a href="#21-writing-writing-and-writing" syle="color:white">4.1. Format Specifiers</a></strong></li>
+ 		<li><strong><a href="#22-brief-history-of-printf" syle="color:white">4.2. Variadic Functions</a></strong></li>
+		<ul style="list-style-type:square">
+			<li><strong><a href="#22-brief-history-of-printf" syle="color:white">4.2.1. Definition</a></strong></li>
+			<li><strong><a href="#22-brief-history-of-printf" syle="color:white">4.2.2. Declaration of Variadic Functions</a></strong></li>
+			<li><strong><a href="#22-brief-history-of-printf" syle="color:white">4.2.3. Macros in Variadic Functions</a></strong></li>
 		</ul>
 	</ul>
-	<li><strong><a href="#advanced-guide" style="color:white">Advanced Topics</a></strong></li>
-	<ul style="list-style-type:disc">
-		<li><a href="#conditionals">A1 - Conditional Directives</a></li>
-		<li><a href="#mmd-flag">A2 - The MMD flag</a></li>
-		<li><a href="#command-line">A3 - Command-line variables</a></li>
-		<li><a href="#functions">A4 - Functions</a></li>
-		<ul style="list-style-type:disc">
-			<li><a href="#functions-1">A4.1 - Functions Call Syntax</a></li>
-			<li><a href="#functions-2">A4.2 - Functions for String Manipulation</a></li>
-			<li><a href="#functions-3">A4.3 - Functions for File Names</a></li>
-			<li><a href="#functions-4">A4.4 - Functions for Generic Purposes</a></li>
-		</ul>
-		<li><a href="#vpath">A5 - The vpath directive</a></li>
+	<li><strong><a href="#4-important-aspects-of-printf" syle="color:white">5. Builing a printf function from scratch</a></strong></li>
+</ul>
 
 # About
 
