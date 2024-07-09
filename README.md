@@ -370,3 +370,11 @@ Creating a custom printf function from scratch is a valuable exercise for unders
 This foundational knowledge not only enhances our understanding of the C language but also prepares us for more complex programming tasks, such as implementing custom logging mechanisms or debugging tools. While our simplified implementation covers basic functionality, the process reveals the complexity behind seemingly simple standard library functions. For more advanced usage, we could expand our implementation to support additional specifiers, precision, width, and other formatting flags.
 
 Overall, building a printf function from the ground up exemplifies the power and flexibility of C, reinforcing core programming concepts and enhancing problem-solving skills.
+
+----
+### License
+
+This work is published under the terms of <a href="https://github.com/lude-bri/42_Common_Core/blob/main/LICENSE.md">42 Unlicense</a>.
+
+<p align="right">(<a href="#readme-top">get to top</a>)</p>
+
