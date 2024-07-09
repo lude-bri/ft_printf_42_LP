@@ -8,7 +8,7 @@
 	<li><strong>Introduction</strong></li>
 	<li><strong>Context of Printf</strong></li>
 	<li><strong>Understading its usage</strong></li>
-	<li><strong>Creating a printf from scratch</strong></li>
+	<li><strong>Important aspects of Printf</strong></li>
 	<ol>
 		<li>Format Specifiers</li>
 		<li>Variadic Functions</li>
@@ -203,7 +203,7 @@ In other hand, when the function printf does not encounter any `%`, writes every
 
 That is the way that printf function works. Prints every char into the output. If `%` is found, the function will check the next character is a **format specifier** or not. If it is, printf will check which specifier it is to print the correspondent.
 
-# 4. Creating a printf from scratch
+# 4. Important aspects of Printf
 
 As said by Ritchie and Kernighan (1978)
 >[!IMPORTANT]
@@ -220,7 +220,7 @@ Knowing how the printf function works, it's easier to recreate it. First of all,
 	<li>c) the printf function can handle multiple arguments.</li>
 </ul>
 
-Hence, in order to create printf function from scratch we must consider two main aspects:**1. Format Specifiers** and **2. Variadic Functions.**
+Hence, in order to create printf function from scratch we must consider two main important aspects of printf:**1. Format Specifiers** and **2. Variadic Functions.**
 
 ## 4.1. Format Specifiers
 
@@ -325,3 +325,16 @@ int main (void)
   return 0;
 }
 ```
+
+# 5. Builing a printf function from scratch
+
+Basically, knowing all of this, in this project we will build a printf function from scratch using the **Variadic Functions** and other basic functions that we've already created in `Libft`.
+
+So let's do it.
+<ol>
+	<li><strong>Printf writes everything to the terminal;</strong></li>
+	<li><strong>If finds a `%`, check the next character to identify the specifier</strong></li>
+	<li><strong>In this case, use the Variadic Functions to handle multiple arguments</strong></li>
+	<li><strong>Return an integer, if positive means that this is the number of bytes written, if negative, error.
+</strong></li>
+</ol>
