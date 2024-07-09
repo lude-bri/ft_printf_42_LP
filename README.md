@@ -244,3 +244,6 @@ Following the table descripted by Ritchie and Kernighan (1978), we can see the *
 | p | void *| pointer |
 | % | - | no argument is converted, print a % |
 
+You can also see more format specifiers used, for instance, `%li` for long ints or `%lu` for unsigned int long. Highly recommended for you to read more about this in [here](https://www.geeksforgeeks.org/format-specifiers-in-c/) or, if you are interested in seeing more about this in C programming language, read [this](http://cslabcms.nju.edu.cn/problem_solving/images/c/cc/The_C_Programming_Language_%282nd_Edition_Ritchie_Kernighan%29.pdf).
+
+
