@@ -259,12 +259,15 @@ The library function printf is an example of a class of function where variable 
 ### 4.2.2. Declaration of Variadic Functions
 
 Defining and using a variadic function involves three steps:
+<ol>
+	
+<li>Define the function as variadic, using an ellipsis (‘…’) in the argument list, and using special macros to access the variable arguments.</li>
 
-Define the function as variadic, using an ellipsis (‘…’) in the argument list, and using special macros to access the variable arguments.
+<li>Declare the function as variadic, using a prototype with an ellipsis (‘…’), in all the files which call it.</li>
 
-Declare the function as variadic, using a prototype with an ellipsis (‘…’), in all the files which call it.
+<li>Call the function by writing the fixed arguments followed by the additional variable arguments.</li>
 
-Call the function by writing the fixed arguments followed by the additional variable arguments.
+</ol>
 
 ### 4.2.3. Macros in Variadic Functions
 
