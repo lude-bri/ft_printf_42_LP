@@ -1,8 +1,18 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rounded&height=300&color=gradient&text=Work%20in%20Progress" />
-</p>
-<h1 align="center"> Hello! I'm sorry! Working on that! </h1>
 
+<!-------Printf_Image-------->
+<a name="readme-top"></a>
+<p align="center">
+	<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=0ABAB5&text=Printf&fontColor=fcf3f2" />
+</p>
+
+<!-------About-------->
+
+## About
+
+The main objective of this project is to replicate the printf function. It's quite important for two reasons: 1. Develop the ability to build your own tool, recreating fundamental functions like printf and 2. understand more deeply the concepts of variadic functions and more.
+
+----
+<!-------Index-------->
 # Index
 <ul>
 	<li><strong><a href="#1-introduction" syle="color:white">1. Introduction</a></strong></li>
@@ -25,10 +35,6 @@
 	</ul>
 	<li><strong><a href="#4-important-aspects-of-printf" syle="color:white">5. Builing a printf function from scratch</a></strong></li>
 </ul>
-
-# About
-
-The main objective of this project is to replicate the printf function. It's quite important for two reasons: 1. Develop the ability to build your own tool, recreating fundamental functions like printf and 2. understand more deeply the concepts of variadic functions and more.
 
 # 1. Introduction
 
