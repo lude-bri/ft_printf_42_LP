@@ -4,9 +4,13 @@
 <h1 align="center"> Hello! I'm sorry! Working on that! </h1>
 
 # Index
-<ol>
-	<li><strong><a href="#1-introduction">Introduction</a></strong></li>
-	<li><strong><a href="">Context of Printf</a></strong></li>
+<ul>
+	<li><strong><a href="#1-introduction" syle="color:white">1. Introduction</a></strong></li>
+	<li><strong><a href="#2-context-of-printf" syle="color:white">2. Context of Printf</a></strong></li>
+	<ul style="list-style-type:disc">
+		<li><strong><a href="#2-context-of-printf" syle="color:white">2.1. Writing, writing and writing</a></strong></li>
+ 		<li><strong><a href="#2-context-of-printf" syle="color:white">2.2. Brief history of Printf</a></strong></li>
+	</ul>
 	<li><strong><a href="">Understading its usage</a></strong></li>
 	<li><strong>Important aspects of Printf</strong></li>
 	<ol>
@@ -14,7 +18,7 @@
 		<li>Variadic Functions</li>
 	</ol>
 	<li><strong>Building a printf</strong></li>
-</ol>
+</ul>
 
 <li><strong><a href="#beginners-guide" style="color:white">Beginner's Guide</a></strong></li>
 	<ul style="list-style-type:disc">
