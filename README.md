@@ -338,3 +338,13 @@ So let's do it.
 	<li><strong>Return an integer, if positive means that this is the number of bytes written, if negative, error.
 </strong></li>
 </ol>
+
+You can see in the following example, the flowchart to create the printf function
+
+<div align=center>
+	<image src=images/graph_02.png height="800" weight="700">
+</div>
+
+In my project, this flowchart is represented in code in the main function `ft_printf.c`.
+
+
