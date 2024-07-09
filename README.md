@@ -345,6 +345,5 @@ You can see in the following example, the flowchart to create the printf functio
 	<image src=images/graph_02.png height="800" weight="700">
 </div>
 
-In my project, this flowchart is represented in code in the main function `ft_printf.c`.
-
+In my project, this flowchart is represented in `ft_printf.c`.
 
