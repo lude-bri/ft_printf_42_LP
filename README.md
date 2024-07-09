@@ -25,15 +25,15 @@ The main objective of this project is to replicate the printf function. It's qui
 	<li><strong><a href="#3-understanding-its-usage" syle="color:white">3. Understading its usage</a></strong></li>
 	<li><strong><a href="#4-important-aspects-of-printf" syle="color:white">4. Important aspects of Printf</a></strong></li>
 	<ul style="list-style-type:disc">
-		<li><strong><a href="#21-writing-writing-and-writing" syle="color:white">4.1. Format Specifiers</a></strong></li>
- 		<li><strong><a href="#22-brief-history-of-printf" syle="color:white">4.2. Variadic Functions</a></strong></li>
+		<li><strong><a href="#41-format-specifiers" syle="color:white">4.1. Format Specifiers</a></strong></li>
+ 		<li><strong><a href="#42-variadic-functions" syle="color:white">4.2. Variadic Functions</a></strong></li>
 		<ul style="list-style-type:square">
-			<li><strong><a href="#22-brief-history-of-printf" syle="color:white">4.2.1. Definition</a></strong></li>
-			<li><strong><a href="#22-brief-history-of-printf" syle="color:white">4.2.2. Declaration of Variadic Functions</a></strong></li>
-			<li><strong><a href="#22-brief-history-of-printf" syle="color:white">4.2.3. Macros in Variadic Functions</a></strong></li>
+			<li><strong><a href="#421-definition" syle="color:white">4.2.1. Definition</a></strong></li>
+			<li><strong><a href="#422-declaration-of-variadic-functions" syle="color:white">4.2.2. Declaration of Variadic Functions</a></strong></li>
+			<li><strong><a href="#423-macros-in-variadic-functions" syle="color:white">4.2.3. Macros in Variadic Functions</a></strong></li>
 		</ul>
 	</ul>
-	<li><strong><a href="#4-important-aspects-of-printf" syle="color:white">5. Builing a printf function from scratch</a></strong></li>
+	<li><strong><a href="#5-building-a-printf-function-from-scratch" syle="color:white">5. Builing a printf function from scratch</a></strong></li>
 </ul>
 
 # 1. Introduction
@@ -342,7 +342,7 @@ int main (void)
 }
 ```
 
-# 5. Builing a printf function from scratch
+# 5. Building a printf function from scratch
 
 Basically, knowing all of this, in this project we will build a printf function from scratch using the **Variadic Functions** and other basic functions that we've already created in `Libft`.
 
