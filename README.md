@@ -205,6 +205,14 @@ That is the way that printf function works. Prints every char into the output. I
 
 # 4. Creating a printf from scratch
 
+As said by Ritchie and Kernighan (1978)
+>[!IMPORTANT]
+>printf convers, formats, and prints its arguments on the standard output under control of the format. It returns the number of characters printed.
+
+The format string contains two types of objects: ordinary characters, which are copied to the output stream, and conversion specifications, each of which causes conversion and printing of the next successive argument to `printf`.
+
+Each conversion specification begins with a `%` and ends with a conversion character.
+
 Knowing how the printf function works, it's easier to recreate it. First of all, the characteristics of `printf` is summarized in 
 <ul>
 	<li>a) Print every character,</li> 
@@ -216,3 +224,8 @@ Hence, in order to create printf function from scratch we must consider two main
 
 ## 4.1 Format Specifiers
 
+Format specifiers is used to tell the compiler about the type of data to be printed or scanned in input and output operations. Is not exclusive to printf, rather this works generally in C language.
+
+They always start with a % symbol an are used in the formatted string in functions like `printf`, `scanf`, `sprintf`, `fprintf`, etc.
+
+Following the table descripted by Ritchie and Kernighan (1978), we can see the **Basic Format Specifiers**
