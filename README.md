@@ -8,8 +8,9 @@
 	<li><strong><a href="#1-introduction" syle="color:white">1. Introduction</a></strong></li>
 	<li><strong><a href="#2-context-of-printf" syle="color:white">2. Context of Printf</a></strong></li>
 	<ul style="list-style-type:disc">
-		<li><strong><a href="#2-context-of-printf" syle="color:white">2.1. Writing, writing and writing</a></strong></li>
- 		<li><strong><a href="#2-context-of-printf" syle="color:white">2.2. Brief history of Printf</a></strong></li>
+		<li><strong><a href="#21-writing-writing-and-writing" syle="color:white">2.1. Writing, writing and writing</a></strong></li>
+ 		<li><strong><a href="#22-brief-history-of-printf" syle="color:white">2.2. Brief history of Printf</a></strong></li>
+		<li><strong><a href="#23-printf-in-other-languages" syle="color:white">2.3. Printf in other languages</a></strong></li>
 	</ul>
 	<li><strong><a href="">Understading its usage</a></strong></li>
 	<li><strong>Important aspects of Printf</strong></li>
