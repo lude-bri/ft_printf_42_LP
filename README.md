@@ -52,7 +52,7 @@ The function to print is fundamental. Just like performing calculations, to prin
 
 Before talking about prints, let's see write().
 
-Write() is one of the most basic functions. The write function writes up to size bytes from buffer to the file with descriptor filedes. The data in buffer is not necessarily a character string and a null character is output like any other character. (Input and Output Primitives https://www.gnu.org/savannah-checkouts/gnu/libc/manual/html_node/I_002fO-Primitives.html#I_002fO-Primitives). 
+Write() is one of the most basic functions. The write function writes up to size bytes from buffer to the file with descriptor filedes. The data in buffer is not necessarily a character string and a null character is output like any other character [(Input and Output Primitives)](https://www.gnu.org/savannah-checkouts/gnu/libc/manual/html_node/I_002fO-Primitives.html#I_002fO-Primitives).
 
 When I say that is basic, I mean it. You see, every programming language must perform 5 basic tasks. Those are: 
 <ol>
