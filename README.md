@@ -222,7 +222,7 @@ Knowing how the printf function works, it's easier to recreate it. First of all,
 
 Hence, in order to create printf function from scratch we must consider two main aspects:**1. Format Specifiers** and **2. Variadic Functions.**
 
-## 4.1 Format Specifiers
+## 4.1. Format Specifiers
 
 Format specifiers is used to tell the compiler about the type of data to be printed or scanned in input and output operations. Is not exclusive to printf, rather this works generally in C language.
 
@@ -246,4 +246,107 @@ Following the table descripted by Ritchie and Kernighan (1978), we can see the *
 
 You can also see more format specifiers used, for instance, `%li` for long ints or `%lu` for unsigned int long. Highly recommended for you to read more about this in [here](https://www.geeksforgeeks.org/format-specifiers-in-c/) or, if you are interested in seeing more about this in C programming language, read [this](http://cslabcms.nju.edu.cn/problem_solving/images/c/cc/The_C_Programming_Language_%282nd_Edition_Ritchie_Kernighan%29.pdf).
 
+## 4.2. Variadic Functions
 
+### 4.2.1. Definition
+Variadic Functions are functions which take a variable number of arguments, e.g `printf`.
+
+>[!IMPORTANT]
+> ISO C defines a syntax for declaring a function to take a variable number or type of arguments. (Such functions are referred to as varargs functions or variadic functions.) However, the language itself provides no mechanism for such functions to access their non-required arguments; instead, you use the variable arguments macros defined in stdarg.h.[(GNU)](https://www.gnu.org/software/libc/manual/html_node/Variadic-Functions.html)
+
+The library function printf is an example of a class of function where variable arguments are quite useful. This function prints its arguments (which can vary in type as well as number) under the control of a format template string.
+
+### 4.2.2. Declaration of Variadic Functions
+
+Defining and using a variadic function involves three steps:
+
+Define the function as variadic, using an ellipsis (‘…’) in the argument list, and using special macros to access the variable arguments.
+
+Declare the function as variadic, using a prototype with an ellipsis (‘…’), in all the files which call it.
+
+Call the function by writing the fixed arguments followed by the additional variable arguments.
+
+### 4.2.3. Macros in Variadic Functions
+
+Here are descriptions of the macros used to retrieve variable arguments. These macros are defined in the header file stdarg.h.
+
+Data Type: va_list
+The type va_list is used for argument pointer variables.
+
+Macro: void va_start (va_list ap, last-required)
+Preliminary: | MT-Safe | AS-Safe | AC-Safe | See POSIX Safety Concepts.
+
+This macro initializes the argument pointer variable ap to point to the first of the optional arguments of the current function; last-required must be the last required argument to the function.
+
+Macro: type va_arg (va_list ap, type)
+Preliminary: | MT-Safe race:ap | AS-Safe | AC-Unsafe corrupt | See POSIX Safety Concepts.
+
+The va_arg macro returns the value of the next optional argument, and modifies the value of ap to point to the subsequent argument. Thus, successive uses of va_arg return successive optional arguments.
+
+The type of the value returned by va_arg is type as specified in the call. type must be a self-promoting type (not char or short int or float) that matches the type of the actual argument.
+
+Macro: void va_end (va_list ap)
+Preliminary: | MT-Safe | AS-Safe | AC-Safe | See POSIX Safety Concepts.
+
+This ends the use of ap. After a va_end call, further va_arg calls with the same ap may not work. You should invoke va_end before returning from the function in which va_start was invoked with the same ap argument.
+
+In the GNU C Library, va_end does nothing, and you need not ever use it except for reasons of portability.
+
+Sometimes it is necessary to parse the list of parameters more than once or one wants to remember a certain position in the parameter list. To do this, one will have to make a copy of the current value of the argument. But va_list is an opaque type and one cannot necessarily assign the value of one variable of type va_list to another variable of the same type.
+
+Macro: void va_copy (va_list dest, va_list src)
+Macro: void __va_copy (va_list dest, va_list src)
+Preliminary: | MT-Safe | AS-Safe | AC-Safe | See POSIX Safety Concepts.
+
+The va_copy macro allows copying of objects of type va_list even if this is not an integral type. The argument pointer in dest is initialized to point to the same argument as the pointer in src.
+
+va_copy was added in ISO C99. When building for strict conformance to ISO C90 (‘gcc -std=c90’), it is not available. GCC provides __va_copy, as an extension, in any standards mode; before GCC 3.0, it was the only macro for this functionality.
+
+These macros are no longer provided by the GNU C Library, but rather by the compiler.
+
+If you want to use va_copy and be portable to pre-C99 systems, you should always be prepared for the possibility that this macro will not be available. On architectures where a simple assignment is invalid, hopefully va_copy will be available, so one should always write something like this if concerned about pre-C99 portability:
+```C
+{
+  va_list ap, save;
+  …
+#ifdef va_copy
+  va_copy (save, ap);
+#else
+  save = ap;
+#endif
+  …
+}
+```
+
+Here is a complete sample function that accepts a variable number of arguments. The first argument to the function is the count of remaining arguments, which are added up and the result returned. While trivial, this function is sufficient to illustrate how to use the variable arguments facility.
+
+```C
+#include <stdarg.h>
+#include <stdio.h>
+
+int add_em_up (int count,...)
+{
+  va_list ap;
+  int i, sum;
+
+  va_start (ap, count);         /* Initialize the argument list. */
+
+  sum = 0;
+  for (i = 0; i < count; i++)
+    sum += va_arg (ap, int);    /* Get the next argument value. */
+
+  va_end (ap);                  /* Clean up. */
+  return sum;
+}
+
+int main (void)
+{
+  /* This call prints 16. */
+  printf ("%d\n", add_em_up (3, 5, 5, 6));
+
+  /* This call prints 55. */
+  printf ("%d\n", add_em_up (10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+  return 0;
+}
+```
