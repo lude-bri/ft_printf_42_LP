@@ -205,9 +205,14 @@ That is the way that printf function works. Prints every char into the output. I
 
 # 4. Creating a printf from scratch
 
-Knowing how the printf function works, it's easier to recreate it. First of all, the characteristics of `printf` is summarized in a) Print every character, b) If `%` is found, check what is the specifier and print the correspondent variable type, c) the printf function can handle multiple arguments. 
+Knowing how the printf function works, it's easier to recreate it. First of all, the characteristics of `printf` is summarized in 
+<ul>
+	<li>a) Print every character,</li> 
+	<li>b) If `%` is found, check what is the specifier and print the correspondent variable type,</li> 
+	<li>c) the printf function can handle multiple arguments.</li>
+</ul>
 
-Hence, in order to create printf function from scratch we must consider two main aspects: 1. Format Specifiers and 2. Variadic Functions.
+Hence, in order to create printf function from scratch we must consider two main aspects:** 1. Format Specifiers **and **2. Variadic Functions.**
 
 ## 4.1 Format Specifiers
 
