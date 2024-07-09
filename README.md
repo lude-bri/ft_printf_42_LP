@@ -12,7 +12,7 @@
  		<li><strong><a href="#22-brief-history-of-printf" syle="color:white">2.2. Brief history of Printf</a></strong></li>
 		<li><strong><a href="#23-printf-in-other-languages" syle="color:white">2.3. Printf in other languages</a></strong></li>
 	</ul>
-	<li><strong><a href="">Understading its usage</a></strong></li>
+	<li><strong><a href="#3-understanding-its-usage" syle="color:white">3. Understading its usage</a></strong></li>
 	<li><strong>Important aspects of Printf</strong></li>
 	<ol>
 		<li>Format Specifiers</li>
