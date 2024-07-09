@@ -40,10 +40,9 @@ The main objective of this project is to replicate the printf function. It's qui
 
 Printf is a standard function in many libraries that simply does formatted printing of text.
 
-As defined in the GNU.org, printf prints the format string, interpreting ‘%’ directives and ‘\’ escapes to format numeric and string arguments in a way that is mostly similar to the C ‘printf’ function.
+As defined in the GNU.org, printf prints the format string, interpreting `%` directives and `\` escapes to format numeric and string arguments in a way that is mostly similar to the C `printf` function.
 
 In C, printf is a standard library function that formats text and writes it to standard output. The name, printf is short for print formatted where print refers to output to a printer although the functions are not limited to printer output.
-
 
 # 2. Context of Printf
 
