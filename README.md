@@ -229,3 +229,18 @@ Format specifiers is used to tell the compiler about the type of data to be prin
 They always start with a % symbol an are used in the formatted string in functions like `printf`, `scanf`, `sprintf`, `fprintf`, etc.
 
 Following the table descripted by Ritchie and Kernighan (1978), we can see the **Basic Format Specifiers**
+
+| CHARACTER | ARGUMENT TYPE | PRINTED |
+------------ | ------------- | -------- |
+|     d, i      |   int        | decimal number |
+| o | int | unsigned octal number (without a leading zero) |
+| x, X | int | unsigned hexadecimal number (without a leading 0x or 0X), using abcdef or ABCDEF for 10, ..., 15 |
+| u | int | unsigned decimal number |
+| c | int | single character |
+| s | char * | print characters from the string until a '\0' or the number of characters given by the precision |
+| f | double | [-]m.dddddd, where the number fo d's is given by the precision
+| e, E | double | [-]m.dddddde+xx or [-]m.ddddddE+xx, where the number of d's is given by the precision
+| g, G | double | use %e or %E if the exponent is less than -4 or greater than or equal to the precision; otherwise use %f. Trailing zeros and a trailing decimal point are not printed
+| p | void *| pointer
+| % | | no argument is converted, print a % |
+--------------------------------------------
