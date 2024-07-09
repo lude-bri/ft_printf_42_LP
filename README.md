@@ -34,6 +34,7 @@ The main objective of this project is to replicate the printf function. It's qui
 		</ul>
 	</ul>
 	<li><strong><a href="#5-building-a-printf-function-from-scratch" syle="color:white">5. Builing a printf function from scratch</a></strong></li>
+	<li><strong><a href="#6-conclusion" syle="color:white">6. Conclusion</a></strong></li>
 </ul>
 
 # 1. Introduction
@@ -360,6 +361,12 @@ You can see in the following example, the flowchart to create the printf functio
 	<image src=images/graph_02.png height="800" weight="700">
 </div>
 
-In my project, this flowchart is represented in `ft_printf.c`.
+In my project, this flowchart is represented in `ft_printf.c`. You can check how I build the function in this same 
 
+# Conclusion
 
+Creating a custom printf function from scratch is a valuable exercise for understanding the intricacies of formatted output and the workings of variable argument lists in C. By dissecting how to handle various format specifiers like %d, %s, %c, and %%, and implementing them through helper functions, we gain deeper insights into string processing, memory management, and output functions.
+
+This foundational knowledge not only enhances our understanding of the C language but also prepares us for more complex programming tasks, such as implementing custom logging mechanisms or debugging tools. While our simplified implementation covers basic functionality, the process reveals the complexity behind seemingly simple standard library functions. For more advanced usage, we could expand our implementation to support additional specifiers, precision, width, and other formatting flags.
+
+Overall, building a printf function from the ground up exemplifies the power and flexibility of C, reinforcing core programming concepts and enhancing problem-solving skills.
